@@ -1,7 +1,5 @@
-// EXERCISE: Create an object that takes a series of numbers as an array and
-// then find (and output) the average and the max. Use a function!
+// average - returns the average value in a given array
 
-// returns the average of the array
 var calculator = {
   average:
   function average (arr) {
@@ -11,24 +9,55 @@ var calculator = {
   }
   return output / arr.length;
 }
-},
+};
 
-var outputAvg = calculator.average([1, 2, 3, 4, 5]);
+var outputAvg = calculator.average([4, 6, 1, 1]);
 console.log(outputAvg);
 
 
 
-// returns the max of the array
-// var calculator = {
-  // max:
-  function max (arr) {
-    var output = 0;
-    for (var i = 0; i < arr.length; i++) {
-    if(arr)[i]<largestNum;
-      output += arr[i];
-    }
 
-    return output;
-  // }
+
+// This is how I had it, Reyna had me rewrite it with the _.first code below
+// var array = [1, 2, 3, 4, 5]
+// function first (array) {
+//   var uno = array.slice(0,1);
+//   return uno;
+//   // var number = array.slice(0);
+//   // return array[0];
+// }
+
+_.add = function (num1, num2) {
+  return num1 + num2;
 };
-console.log(max[1, 2, 3, 4, 5]);
+
+// first - returns the first element in an array
+// _.first([5, 4, 3, 2, 1]);
+// => 5
+
+var _ = {};
+
+_.first = function (array) {
+  var uno = array.slice(0,1);
+  return uno;
+};
+
+// contains - returns true is a given value is present in an array
+// _.contains([7,55,99], 99);
+// => true
+
+_.contains = function (array, number) {
+
+
+  return true;
+};
+
+// max - returns the maximum value in an array
+// var numbers = [10, 5, 100, 2, 1000];
+// _.max(numbers);
+// => 1000
+
+_.max = function (array, number) {
+  var biggest = 0;
+
+};
